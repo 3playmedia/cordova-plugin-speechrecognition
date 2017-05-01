@@ -275,7 +275,7 @@ public class SpeechRecognition extends CordovaPlugin {
       String errorMessage = getErrorText(errorCode);
       Log.d(LOG_TAG, "Error: " + errorMessage);
       // callbackContext.error(errorMessage);
-      if (errorCode !== 7) { 
+      if (errorCode != 7) { 
         // From CJ: 7 = No Match... this is a hack
         // See https://github.com/pbakondy/cordova-plugin-speechrecognition/issues/15
         callbackContext.error(errorMessage);
